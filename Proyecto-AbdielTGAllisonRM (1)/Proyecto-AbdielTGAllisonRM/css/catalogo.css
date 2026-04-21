@@ -1,0 +1,159 @@
+/* =========================
+   CATALOGO
+========================= */
+.fila-filtros,
+.filter-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.catalog-item article {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.catalog-item h3 {
+  min-height: 96px;
+  margin-bottom: 12px;
+}
+
+.acciones-tarjeta,
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.acciones-tarjeta > *,
+.card-actions > * {
+  flex: 1 1 180px;
+}
+
+.item-catalogo.oculto,
+.catalog-item.hidden {
+  display: none;
+}
+
+.modal-personalizado,
+.custom-modal {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0;
+  background: linear-gradient(180deg, #07090e, #10131a);
+}
+
+.descripcion-modal,
+.modal-description {
+  margin: 16px 0 22px;
+}
+
+.linea-detalle,
+.detail-line {
+  margin-bottom: 9px;
+  color: #8891a4;
+}
+
+.linea-detalle strong,
+.detail-line strong {
+  color: white;
+}
+
+
+.imagen-moto,
+.card-bike-image {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 18px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.imagen-contener,
+.contain-image {
+  object-fit: contain;
+  object-position: center;
+  padding: 10px;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.02),
+    transparent 70%
+  );
+}
+
+.tarjeta-imagen img,
+.image-card img,
+.mission-image-card img {
+  width: 100%;
+  min-height: 420px;
+  object-fit: cover;
+}
+
+.media-resumen img,
+.summary-media img {
+  width: 100%;
+  height: 240px;
+  object-fit: contain;
+}
+
+.contenedor-mapa,
+.mapa-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 48px 0;
+}
+
+.mapa-centro {
+  width: min(100%, 980px);
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.32);
+}
+
+#videoModalMoto,
+#bikeModalVideo {
+  width: 100%;
+  max-height: 70vh;
+  border-radius: 10px;
+  object-fit: cover;
+  background: #000000;
+}
+
+.video-recuadro {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 16px;
+  border-radius: 12px;
+}
+
+@media (max-width: 767px) {
+  .fila-filtros,
+  .filter-row {
+    justify-content: flex-start;
+  }
+
+  .catalog-item h3 {
+    min-height: auto;
+  }
+
+  .imagen-moto,
+  .card-bike-image {
+    height: 220px;
+  }
+
+  .media-resumen img,
+  .summary-media img {
+    height: 200px;
+  }
+}

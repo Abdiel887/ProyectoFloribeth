@@ -1,0 +1,274 @@
+.panel-accesibilidad {
+  background:
+    linear-gradient(180deg, rgba(7, 9, 14, 0.98), rgba(12, 15, 22, 0.98)),
+    radial-gradient(circle at top right, rgba(0, 215, 255, 0.08), transparent 25%),
+    radial-gradient(circle at top left, rgba(255, 0, 79, 0.08), transparent 22%);
+  color: white;
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: -24px 0 70px rgba(0, 0, 0, 0.45);
+}
+
+.panel-accesibilidad .offcanvas-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.panel-accesibilidad .offcanvas-title {
+  font-family: "Orbitron", "Inter", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: white;
+  font-size: 1rem;
+}
+
+.panel-accesibilidad .btn-close {
+  filter: invert(1) grayscale(1);
+}
+
+.descripcion-accesibilidad {
+  color: #8891a4;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+
+.btn-accesibilidad {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: white;
+  font-family: "Orbitron", "Inter", sans-serif;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  transition: 0.25s ease;
+}
+
+.btn-accesibilidad i {
+  color: #00d7ff;
+}
+
+.btn-accesibilidad:hover {
+  border-color: #ff004f;
+  background: rgba(255, 0, 79, 0.16);
+  color: white;
+}
+
+.btn-accesibilidad-reset {
+  border-color: rgba(255, 0, 79, 0.35);
+  background: rgba(255, 0, 79, 0.08);
+}
+
+.btn-accesibilidad-reset i {
+  color: red;
+}
+
+
+#contenidoAccesible {
+  transition: 0.2s ease;
+}
+
+#contenidoAccesible.fuente-legible,
+#contenidoAccesible.fuente-legible p,
+#contenidoAccesible.fuente-legible a,
+#contenidoAccesible.fuente-legible li,
+#contenidoAccesible.fuente-legible span,
+#contenidoAccesible.fuente-legible label,
+#contenidoAccesible.fuente-legible td,
+#contenidoAccesible.fuente-legible th,
+#contenidoAccesible.fuente-legible h1,
+#contenidoAccesible.fuente-legible h2,
+#contenidoAccesible.fuente-legible h3,
+#contenidoAccesible.fuente-legible h4,
+#contenidoAccesible.fuente-legible h5,
+#contenidoAccesible.fuente-legible h6,
+#contenidoAccesible.fuente-legible button,
+#contenidoAccesible.fuente-legible input,
+#contenidoAccesible.fuente-legible textarea,
+#contenidoAccesible.fuente-legible select,
+#contenidoAccesible.fuente-legible small,
+#contenidoAccesible.fuente-legible strong,
+#contenidoAccesible.fuente-legible legend,
+#contenidoAccesible.fuente-legible caption {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+
+#contenidoAccesible.fuente-legible p,
+#contenidoAccesible.fuente-legible li,
+#contenidoAccesible.fuente-legible td,
+#contenidoAccesible.fuente-legible th,
+#contenidoAccesible.fuente-legible label,
+#contenidoAccesible.fuente-legible small,
+#contenidoAccesible.fuente-legible input,
+#contenidoAccesible.fuente-legible textarea,
+#contenidoAccesible.fuente-legible select,
+#contenidoAccesible.fuente-legible caption {
+  line-height: 1.6 !important;
+  letter-spacing: 0 !important;
+}
+
+
+#contenidoAccesible.fuente-legible h1,
+#contenidoAccesible.fuente-legible h2,
+#contenidoAccesible.fuente-legible h3,
+#contenidoAccesible.fuente-legible h4,
+#contenidoAccesible.fuente-legible h5,
+#contenidoAccesible.fuente-legible h6 {
+  line-height: 1.1 !important;
+  letter-spacing: 0 !important;
+}
+
+
+#contenidoAccesible.fuente-legible .nav-link,
+#contenidoAccesible.fuente-legible .boton-primario,
+#contenidoAccesible.fuente-legible .boton-secundario,
+#contenidoAccesible.fuente-legible .outline-btn,
+#contenidoAccesible.fuente-legible .catalog-filter,
+#contenidoAccesible.fuente-legible .etiqueta-seccion,
+#contenidoAccesible.fuente-legible .titulo-pie,
+#contenidoAccesible.fuente-legible .titulo-panel,
+#contenidoAccesible.fuente-legible .enlace-fantasma {
+  line-height: 1.2 !important;
+}
+
+
+#contenidoAccesible.fuente-legible .encabezado-seccion-dividido {
+  align-items: flex-start !important;
+  gap: 18px !important;
+}
+
+
+#contenidoAccesible.fuente-legible .navbar-brand,
+#contenidoAccesible.fuente-legible .marca-texto,
+#contenidoAccesible.fuente-legible .brand-wordmark,
+#contenidoAccesible.fuente-legible .texto-acento,
+#contenidoAccesible.fuente-legible .marca-icono,
+#contenidoAccesible.fuente-legible .navbar-brand * {
+  font-family: "Orbitron", "Inter", sans-serif !important;
+  letter-spacing: 0.03em !important;
+  line-height: normal !important;
+}
+
+#contenidoAccesible.contraste-accesible {
+  background-color: #000000 !important;
+  color: #ffff00 !important;
+}
+
+
+#contenidoAccesible.contraste-accesible * {
+  color: inherit !important;
+  background-color: transparent !important;
+  border-color: #ffff00 !important;
+}
+
+
+#contenidoAccesible.contraste-accesible p,
+#contenidoAccesible.contraste-accesible li,
+#contenidoAccesible.contraste-accesible td,
+#contenidoAccesible.contraste-accesible th,
+#contenidoAccesible.contraste-accesible label,
+#contenidoAccesible.contraste-accesible span,
+#contenidoAccesible.contraste-accesible small {
+  color: yellow !important;
+}
+
+#contenidoAccesible.contraste-accesible h1,
+#contenidoAccesible.contraste-accesible h2,
+#contenidoAccesible.contraste-accesible h3,
+#contenidoAccesible.contraste-accesible h4,
+#contenidoAccesible.contraste-accesible h5,
+#contenidoAccesible.contraste-accesible h6,
+#contenidoAccesible.contraste-accesible strong {
+  color: yellow!important;
+}
+
+
+#contenidoAccesible.contraste-accesible a {
+  color: #00ffff !important;
+  text-decoration: underline;
+}
+
+
+#contenidoAccesible.contraste-accesible #tabla-premium {
+  border: 2px solid yellow !important;
+}
+
+#contenidoAccesible.contraste-accesible #tabla-head {
+  background-color: yellow!important;
+}
+
+#contenidoAccesible.contraste-accesible #tabla-head * {
+  color: black !important;
+}
+
+#contenidoAccesible.contraste-accesible #tabla-body td {
+  color: yellow !important;
+}
+
+#contenidoAccesible.contraste-accesible #tabla-body tr:hover {
+  background-color: yellow!important;
+}
+
+#contenidoAccesible.contraste-accesible #tabla-body tr:hover * {
+  color: black!important;
+}
+
+
+#contenidoAccesible.contraste-accesible #col-1,
+#contenidoAccesible.contraste-accesible #col-2,
+#contenidoAccesible.contraste-accesible #col-3,
+#contenidoAccesible.contraste-accesible #col-4 {
+  background-color: black !important;
+}
+
+
+#contenidoAccesible.contraste-accesible .opc {
+  background-color: #000000 !important;
+  color: yellow !important;
+  border: 2px solid yellow !important;
+}
+
+#contenidoAccesible.contraste-accesible .opc:hover {
+  background-color: yellow !important;
+}
+
+#contenidoAccesible.contraste-accesible .opc:hover * {
+  color: black !important;
+}
+
+
+#contenidoAccesible.contraste-accesible .boton-primario,
+#contenidoAccesible.contraste-accesible .boton-grande {
+  background-color: yellow !important;
+  color: black !important;
+  border-color: yellow!important;
+}
+
+#contenidoAccesible.contraste-accesible .boton-secundario,
+#contenidoAccesible.contraste-accesible .outline-btn {
+  background-color: transparent !important;
+  color: yellow !important;
+  border: 2px solid yellow!important;
+}
+
+#contenidoAccesible.contraste-accesible .navbar,
+#contenidoAccesible.contraste-accesible .barra-sitio,
+#contenidoAccesible.contraste-accesible .pie-sitio {
+  background-color: black !important;
+}
+
+
+#contenidoAccesible.contraste-accesible .navbar a.active,
+#contenidoAccesible.contraste-accesible .navbar a[aria-current="page"] {
+  color: yellow !important;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+

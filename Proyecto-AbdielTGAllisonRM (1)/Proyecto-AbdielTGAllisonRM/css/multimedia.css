@@ -1,0 +1,77 @@
+.imagen-moto,
+.card-bike-image {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 18px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0));
+}
+
+.imagen-contener,
+.contain-image {
+  object-fit: contain;
+  object-position: center;
+  padding: 10px;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.02), transparent 70%);
+}
+
+.tarjeta-imagen img,
+.image-card img,
+.mission-image-card img {
+  width: 100%;
+  min-height: 420px;
+  object-fit: cover;
+}
+
+.media-resumen img,
+.summary-media img {
+  width: 100%;
+  height: 240px;
+  object-fit: contain;
+}
+
+.contenedor-mapa,
+.mapa-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 48px 0;
+}
+
+.mapa-centro {
+  width: min(100%, 980px);
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.32);
+}
+
+#videoModalMoto,
+#bikeModalVideo {
+  width: 100%;
+  max-height: 70vh;
+  border-radius: 10px;
+  object-fit: cover;
+  background: black; 
+}
+
+.video-recuadro {
+  background: rgba(255,255,255,.02);
+  border: 1px solid rgba(255,255,255,.06);
+  padding: 16px;
+  border-radius: 12px;
+}
+
+@media (max-width: 767px) {
+  .imagen-moto,
+  .card-bike-image {
+    height: 220px;
+  }
+
+  .media-resumen img,
+  .summary-media img {
+    height: 200px;
+  }
+}

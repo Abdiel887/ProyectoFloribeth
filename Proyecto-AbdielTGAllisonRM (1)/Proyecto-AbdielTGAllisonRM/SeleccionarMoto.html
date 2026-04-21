@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RACINGA&A | Seleccionar moto</title>
+    <link rel="icon" href="../ProyectoNuevo/img/ico.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/generales.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/multimedia.css" />
+    <link rel="stylesheet" href="css/catalogo.css" />
+    <link rel="stylesheet" href="css/pie.css" />
+    <link rel="stylesheet" href="css/accesibilidad.css" />
+  </head>
+
+  <body>
+    <div id="contenidoAccesible">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top site-navbar">
+        <div class="container-xl px-4">
+          <a class="navbar-brand brand-wordmark" href="index.html">
+            <span class="brand-logo"><i class="bi bi-speedometer2"></i></span>
+            <span>RACING<span class="accent-word">A&amp;A</span></span>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Abrir menú de navegación"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+              <li class="nav-item">
+                <a class="nav-link" href="financiamiento.html">Volver</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#panelAccesibilidad"
+                  aria-controls="panelAccesibilidad"
+                >
+                  Accesibilidad
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main class="page-main top-spaced">
+        <section
+          id="inicio"
+          class="hero-section story-hero-center"
+          style="background-image: url('img/catalogo.jpg')"
+        >
+          <div class="story-overlay"></div>
+
+          <div class="container-xl px-4 story-content">
+            <span class="section-kicker">CATÁLOGO COMPLETO</span>
+            <h1>Selecciona tu moto</h1>
+          </div>
+        </section>
+
+        <section class="content-section pt-0">
+          <div class="container-xl px-4">
+            <div class="filter-row">
+              <button class="catalog-filter active" data-filter="all" type="button">Todas</button>
+              <button class="catalog-filter" data-filter="deportivas" type="button">Deportivas</button>
+              <button class="catalog-filter" data-filter="cross" type="button">Cross</button>
+              <button class="catalog-filter" data-filter="adventure" type="button">Adventure</button>
+            </div>
+
+            <div class="row g-4" id="catalogGrid">
+              <div class="col-md-6 col-xl-4 catalog-item" data-category="deportivas">
+                <article>
+                  <img src="img/kawah2r.png" alt="Kawasaki Ninja H2R" class="card-bike-image contain-image" />
+                  <h3>Kawasaki Ninja H2R</h3>
+                  <p class="bike-price">$55,500 USD</p>
+                  <div class="card-actions">
+                    <a class="primary-btn compact-btn" href="financiamiento.html?model=kawasaki">Seleccionar</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-md-6 col-xl-4 catalog-item" data-category="deportivas">
+                <article>
+                  <img src="img/yamaha r9.png" alt="Yamaha R9" class="card-bike-image contain-image" />
+                  <h3>Yamaha R9</h3>
+                  <p class="bike-price">$12,500 USD</p>
+                  <div class="card-actions">
+                    <a class="primary-btn compact-btn" href="financiamiento.html?model=yamahar9">Seleccionar</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-md-6 col-xl-4 catalog-item" data-category="deportivas">
+                <article>
+                  <img src="img/Honda-CBR650R.png" alt="Honda CBR650R" class="card-bike-image contain-image" />
+                  <h3>Honda CBR 650 R</h3>
+                  <p class="bike-price">$10,500 USD</p>
+                  <div class="card-actions">
+                    <a class="primary-btn compact-btn" href="financiamiento.html?model=hondacbr">Seleccionar</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-md-6 col-xl-4 catalog-item" data-category="deportivas">
+                <article>
+                  <img src="img/GSX1300R-Hayabusa.png" alt="Suzuki Hayabusa" class="card-bike-image contain-image" />
+                  <h3>Suzuki Hayabusa GSX1300R</h3>
+                  <p class="bike-price">$18,500 USD</p>
+                  <div class="card-actions">
+                    <a class="primary-btn compact-btn" href="financiamiento.html?model=hayabusa">Seleccionar</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-md-6 col-xl-4 catalog-item" data-category="cross">
+                <article>
+                  <img src="img/yamayz.png" alt="Yamaha YZ 125" class="card-bike-image contain-image" />
+                  <h3>Yamaha YZ 125</h3>
+                  <p class="bike-price">$8,300 USD</p>
+                  <div class="card-actions">
+                    <a class="primary-btn compact-btn" href="financiamiento.html?model=yamahayz">Seleccionar</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-md-6 col-xl-4 catalog-item" data-category="cross">
+                <article>
+                  <img src="img/BETA-RR-RACING-300.png" alt="Beta RR Racing 300" class="card-bike-image contain-image" />
+                  <h3>Beta RR Racing 300</h3>
+                  <p class="bike-price">$10,200 USD</p>
+                  <div class="card-actions">
+                    <a class="primary-btn compact-btn" href="financiamiento.html?model=beta">Seleccionar</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-md-6 col-xl-4 catalog-item" data-category="cross">
+                <article>
+                  <img src="img/honda_0018_CRF450R.png" alt="Honda CRF 450R" class="card-bike-image contain-image" />
+                  <h3>Honda CRF 450R</h3>
+                  <p class="bike-price">$9,800 USD</p>
+                  <div class="card-actions">
+                    <a class="primary-btn compact-btn" href="financiamiento.html?model=hondacrf">Seleccionar</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-md-6 col-xl-4 catalog-item" data-category="cross">
+                <article>
+                  <img src="img/KTM-450-XC-F.png" alt="KTM 450 XC-F" class="card-bike-image contain-image" />
+                  <h3>KTM 450 XC-F</h3>
+                  <p class="bike-price">$11,000 USD</p>
+                  <div class="card-actions">
+                    <a class="primary-btn compact-btn" href="financiamiento.html?model=ktm450">Seleccionar</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-md-6 col-xl-4 catalog-item" data-category="adventure">
+                <article>
+                  <img src="img/ktmad.png" alt="KTM Super Adventure R" class="card-bike-image contain-image" />
+                  <h3>KTM Super Adventure R</h3>
+                  <p class="bike-price">$21,700 USD</p>
+                  <div class="card-actions">
+                    <a class="primary-btn compact-btn" href="financiamiento.html?model=ktmsuperadventure">Seleccionar</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-md-6 col-xl-4 catalog-item" data-category="adventure">
+                <article>
+                  <img src="img/freedom.png" alt="Freedom RX401" class="card-bike-image contain-image" />
+                  <h3>Freedom RX401</h3>
+                  <p class="bike-price">$6,500 USD</p>
+                  <div class="card-actions">
+                    <a class="primary-btn compact-btn" href="financiamiento.html?model=freedom">Seleccionar</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-md-6 col-xl-4 catalog-item" data-category="adventure">
+                <article>
+                  <img src="img/2017_bmw-r-1200-gs_6.png" alt="BMW R 1200 GS" class="card-bike-image contain-image" />
+                  <h3>BMW R 1200 GS</h3>
+                  <p class="bike-price">$20,000 USD</p>
+                  <div class="card-actions">
+                    <a class="primary-btn compact-btn" href="financiamiento.html?model=bmw">Seleccionar</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-md-6 col-xl-4 catalog-item" data-category="adventure">
+                <article>
+                  <img src="img/ktm890.png" alt="KTM 890 Adventure R" class="card-bike-image contain-image" />
+                  <h3>KTM 890 Adventure R</h3>
+                  <p class="bike-price">$15,000 USD</p>
+                  <div class="card-actions">
+                    <a class="primary-btn compact-btn" href="financiamiento.html?model=ktm890">Seleccionar</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container-xl px-4">
+          <div class="row g-4 footer-top">
+            <div class="col-lg-3 col-md-6">
+              <a class="brand-wordmark mb-3 d-inline-flex" href="index.html">
+                <span class="brand-logo"><i class="bi bi-speedometer2"></i></span>
+                <span>RACING<span class="accent-word">A&amp;A</span></span>
+              </a>
+              <p>
+                Pasión, precisión y alto rendimiento en cada motocicleta de
+                nuestra línea premium.
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <h3 class="footer-title">Navegación</h3>
+              <ul class="footer-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="financiamiento.html">Financiamiento</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="sucursales.html">Sucursales</a></li>
+                <li>
+                  <a
+                    href="#"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#panelAccesibilidad"
+                    aria-controls="panelAccesibilidad"
+                  >
+                    Accesibilidad
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <h3 class="footer-title">Contacto</h3>
+              <ul class="footer-contact">
+                <li><i class="bi bi-telephone"></i>+506 8888-8888</li>
+                <li><i class="bi bi-envelope"></i>inforacingaa@gmail.com</li>
+                <li><i class="bi bi-geo-alt"></i>San José, Costa Rica</li>
+                <li><i class="bi bi-geo-alt"></i>Puntarenas, Costa Rica</li>
+                <li><i class="bi bi-geo-alt"></i>Alajuela, Costa Rica</li>
+                <li><i class="bi bi-geo-alt"></i>Limón, Costa Rica</li>
+                <li><i class="bi bi-geo-alt"></i>Guanacaste, Costa Rica</li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <h3 class="footer-title">Horario</h3>
+              <ul class="footer-links">
+                <li>Lunes - Viernes: 9:00am - 18:00pm</li>
+                <li>Sábado: 10:00am - 14:00pm</li>
+                <li>Domingo: Cerrado</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2"
+          >
+            <p>© 2025 RACINGA&amp;A. Todos los derechos reservados.</p>
+            <p>Hiperdeportivas · Adventure · Motocross</p>
+            <a href="#inicio" style="color: #ff004f;">Volver arriba</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div id="contenedorPanelAccesibilidad"></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/accesibilidad.js"></script>
+    <script src="js/catalogo.js"></script>
+  </body>
+</html>

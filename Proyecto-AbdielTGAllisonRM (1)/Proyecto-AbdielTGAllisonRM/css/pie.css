@@ -1,0 +1,62 @@
+.pie-sitio,
+.site-footer {
+  padding: 48px 0 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(7, 8, 11, 0.94);
+}
+
+.pie-superior,
+.footer-top {
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.titulo-pie,
+.footer-title {
+  font-size: 1rem;
+}
+
+.enlaces-pie,
+.footer-links,
+.contacto-pie,
+.footer-contact {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.pie-sitio p,
+.site-footer p,
+.enlaces-pie a,
+.footer-links a,
+.enlaces-pie li,
+.footer-links li,
+.contacto-pie li,
+.footer-contact li {
+  color: #8891a4;
+}
+
+.enlaces-pie a:hover,
+.footer-links a:hover {
+  color: white;
+}
+
+.contacto-pie li,
+.footer-contact li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contacto-pie i,
+.footer-contact i {
+  color: red;
+}
+
+.pie-inferior,
+.footer-bottom {
+  padding-top: 16px;
+  font-size: 0.9rem;
+}

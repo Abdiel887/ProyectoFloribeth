@@ -1,0 +1,258 @@
+.pila-contacto {
+  display: grid;
+  gap: 16px;
+}
+
+.caja-contacto {
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+}
+
+.icono-contacto {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: red;
+}
+
+.caja-contacto p {
+  margin-bottom: 3px;
+  color: white;
+}
+
+.caja-contacto small {
+  color: #667086;
+}
+
+
+.lateral-informacion {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.caja-informacion {
+  width: 100%;
+  max-width: 500px;
+  padding: 24px;
+  overflow: hidden;
+  position: relative;
+}
+
+.texto-desplazable {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.contenido-desplazable {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  animation: subirTexto 18s linear infinite;
+}
+
+.contenido-desplazable p {
+  margin: 0;
+  padding-left: 10px;
+  border-left: 2px solid red;
+  font-size: 0.95rem;
+  color: #8891a4;
+}
+
+.texto-desplazable:hover .contenido-desplazable {
+  animation-play-state: paused;
+}
+
+@keyframes subirTexto {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+
+.caja-mapa {
+  min-height: 174px;
+  padding: 32px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background:
+    linear-gradient(180deg, rgba(10, 12, 17, 0.95), rgba(10, 12, 17, 0.95)),
+    linear-gradient(90deg, rgba(0, 215, 255, 0.12) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(0, 215, 255, 0.12) 1px, transparent 1px);
+  background-size: auto, 26px 26px, 26px 26px;
+}
+
+.pin-mapa {
+  font-size: 2rem;
+  color: red;
+}
+
+.tarjeta-formulario {
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.tarjeta-formulario .form-label {
+  color: #8891a4;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+}
+
+.entrada-personalizada {
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0;
+  background: black;
+  color: white;
+}
+
+.entrada-personalizada:focus {
+  border-color: red;
+  background: black;
+  color: white;
+  box-shadow: 0 0 0 0.2rem rgba(255, 0, 79, 0.12);
+}
+
+fieldset {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #374151;
+  border-radius: 10px;
+}
+
+fieldset legend {
+  padding: 0 10px;
+  color: red;
+  font-weight: 600;
+}
+
+#formularioContacto .col-12 button[type="reset"] {
+  padding: 16px 32px;
+  border: none;
+  border-radius: 0;
+  background: #374151;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  font-weight: 700;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
+  transition: 0.25s ease;
+}
+
+#formularioContacto .col-12 button[type="reset"]:hover {
+  transform: translateY(-2px);
+  background: #4b5563;
+  box-shadow: 0 22px 36px rgba(0, 0, 0, 0.35);
+}
+
+/* ESTADO DE ERROR EN CAMPOS */
+.tarjeta-formulario .entrada-personalizada.error,
+.tarjeta-formulario .form-select.error {
+  border: 2px solid red;
+  box-shadow:
+    0 0 8px red,
+    0 0 18px rgba(255, 0, 79, 0.5),
+    0 0 28px rgba(255, 0, 79, 0.3);
+}
+
+.tarjeta-formulario .entrada-personalizada.error:focus,
+.tarjeta-formulario .form-select.error:focus {
+  border: 2px solid red;
+  box-shadow:
+    0 0 8px red,
+    0 0 18px rgba(255, 0, 79, 0.5),
+    0 0 28px rgba(255, 0, 79, 0.3);
+  outline: 0;
+}
+
+
+.acciones-formulario {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.acciones-formulario button {
+  width: 190px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.caja-redes {
+  text-align: center;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.icono-red {
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+  transition: 0.25s ease;
+}
+
+.imagen-red {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  display: block;
+  background: #ffffff;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.icono-red:hover {
+  transform: translateY(-3px);
+  border-color: red;
+  box-shadow: 0 0 0 0.18rem rgba(255, 0, 79, 0.12);
+}
+
+.icono-red:hover .imagen-red {
+  background: #ffe6ef;
+}
+
+
+@media (max-width: 767px) {
+  .texto-desplazable {
+    height: 160px;
+  }
+
+  .caja-informacion {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .icono-red {
+    width: 58px;
+    height: 58px;
+  }
+
+  .imagen-red {
+    width: 30px;
+    height: 30px;
+  }
+
+  .acciones-formulario button {
+    width: 100%;
+  }
+}

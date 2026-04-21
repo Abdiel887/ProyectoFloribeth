@@ -1,0 +1,20 @@
+.seccion-sucursales {
+  margin-bottom: 16px;
+}
+
+details {
+  padding: 16px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(10, 12, 17, 0.94);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.42);
+}
+
+details summary {
+  cursor: pointer;
+  color: red;
+  font-family: "Orbitron", sans-serif;
+}
+
+details p {
+  margin-top: 14px;
+}

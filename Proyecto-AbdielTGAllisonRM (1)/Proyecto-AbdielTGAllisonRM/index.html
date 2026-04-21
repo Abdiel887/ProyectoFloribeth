@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RACINGA&A | Inicio</title>
+    <link rel="icon" href="../ProyectoNuevo/img/ico.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/generales.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/multimedia.css" />
+    <link rel="stylesheet" href="css/inicio.css" />
+    <link rel="stylesheet" href="css/pie.css" />
+    <link rel="stylesheet" href="css/accesibilidad.css" />
+  </head>
+<body>
+
+  <!-- ACCESIBILIDAD: todo lo que esté aquí dentro sí recibe cambios -->
+  <div id="contenidoAccesible">
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top barra-sitio">
+        <div class="container-xl px-4">
+          <a class="navbar-brand marca-texto" href="index.html">
+            <span class="marca-icono"><i class="bi bi-speedometer2"></i></span>
+            <span>RACING<span class="texto-acento">A&amp;A</span></span>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal"
+            aria-controls="menuPrincipal"
+            aria-expanded="false"
+            aria-label="Abrir menú de navegación"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+              <li class="nav-item"><a class="nav-link" href="financiamiento.html">Financiamiento</a></li>
+              <li class="nav-item"><a class="nav-link" href="sucursales.html">Sucursales</a></li>
+              <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+              <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#panelAccesibilidad"
+                  aria-controls="panelAccesibilidad"
+                >
+                  Accesibilidad
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  <div class="carousel slide" id="carruselInicio">
+    <div class="carousel-indicators">
+      <button class="active" data-bs-slide-to="0" data-bs-target="#carruselInicio" type="button"></button>
+      <button data-bs-slide-to="1" data-bs-target="#carruselInicio" type="button"></button>
+      <button data-bs-slide-to="2" data-bs-target="#carruselInicio" type="button"></button>
+    </div>
+
+    <div class="carousel-inner" id="inicio">
+      <div class="carousel-item active" data-bs-interval="6000">
+        <img src="img/imgk.jpg" alt="Kawasaki Ninja" class="d-block w-100" />
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+          <span class="etiqueta-seccion">RACINGA&amp;A</span>
+          <h5>POTENCIA DESATADA</h5>
+          <p>Kawasaki Ninja H2R domina cada curva</p>
+          <a class="boton-primario mt-3" href="catalogo.html">Ver más</a>
+        </div>
+      </div>
+
+      <div class="carousel-item" data-bs-interval="6000">
+        <img src="img/imgyz.jpg" alt="Yamaha YZ" class="d-block w-100" />
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+          <span class="etiqueta-seccion">RACINGA&amp;A</span>
+          <h5>HECHA PARA LA PISTA</h5>
+          <p>Yamaha YZ 125 rendimiento de competición</p>
+          <a class="boton-primario mt-3" href="catalogo.html">Ver más</a>
+        </div>
+      </div>
+
+      <div class="carousel-item" data-bs-interval="6000">
+        <img src="img/imgad.jpg" alt="KTM Adventure" class="d-block w-100" />
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+          <span class="etiqueta-seccion">RACINGA&amp;A</span>
+          <h5>ESPÍRITU DE AVENTURA</h5>
+          <p>KTM 1390 Super Adventure R 2026</p>
+          <a class="boton-primario mt-3" href="catalogo.html">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carruselInicio" type="button">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carruselInicio" type="button">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <main class="pagina-principal espacio-superior">
+
+    <div class="contenedorPadre">
+
+      <div class="row g-4 flexPadre alturaPadre">
+
+        <div class="col-lg-4 col-md-6">
+          <article class="panel-informacion h-100 opc">
+            <div class="icono-informacion"><i class="bi bi-trophy"></i></div>
+            <h3>Rendimiento élite</h3>
+            <p>Cada moto está diseñada para ofrecer la máxima velocidad y precisión en cada curva.</p>
+          </article>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <article class="panel-informacion h-100 opc">
+            <div class="icono-informacion"><i class="bi bi-shield-check"></i></div>
+            <h3>Garantía total</h3>
+            <p>Respaldo integral y atención especializada para proteger tu inversión desde el primer día.</p>
+          </article>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-none d-md-block">
+          <article class="panel-informacion h-100 opc">
+            <div class="icono-informacion"><i class="bi bi-lightning-charge"></i></div>
+            <h3>Servicio premium</h3>
+            <p>Técnicos certificados y atención personalizada para mantener tu máquina siempre al máximo.</p>
+          </article>
+        </div>
+
+      </div>
+
+    </div>
+   
+    <section class="seccion-contenido">
+      <div class="container-xl px-4">
+        <div class="encabezado-seccion encabezado-seccion-dividido">
+          <div>
+            <span class="etiqueta-seccion">Beneficios de RacingA&amp;A</span>
+            <h2>¿Por qué elegir RACINGA&amp;A?</h2>
+          </div>
+        </div>
+
+        <table id="tabla-premium">
+          <caption id="tabla-caption">Beneficios incluidos</caption>
+          <colgroup>
+            <col id="col-1" />
+            <col id="col-2" />
+            <col id="col-3" />
+          </colgroup>
+          <thead id="tabla-head">
+            <tr>
+              <th>Beneficio</th>
+              <th>¿Qué incluye?</th>
+              <th>Valor para ti</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-body">
+            <tr>
+              <td>Financiamiento flexible</td>
+              <td>Planes de 12 a 60 meses</td>
+              <td>Pagos accesibles</td>
+            </tr>
+            <tr>
+              <td>Entrega rápida</td>
+              <td>Menos de 7 días</td>
+              <td>Disfrútala ya</td>
+            </tr>
+            <tr>
+              <td>Garantía premium</td>
+              <td>2 años completos</td>
+              <td>Mayor seguridad</td>
+            </tr>
+            <tr>
+              <td>Asesoría experta</td>
+              <td>Atención personalizada</td>
+              <td>Mejor decisión de compra</td>
+            </tr>
+          </tbody>
+          <tfoot id="tabla-foot">
+            <tr>
+              <td colspan="3">RACINGA&amp;A · Experiencia premium en cada detalle</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+
+    <section class="seccion-contenido">
+      <div class="container-xl px-4">
+        <div class="encabezado-seccion encabezado-seccion-dividido">
+          <div>
+            <span class="etiqueta-seccion">Modelos destacados</span>
+            <h2>LO MEJOR EN RACINGA&amp;A</h2>
+            <p>Nuestras máquinas más exclusivas, diseñadas para quienes no aceptan menos que la perfección.</p>
+          </div>
+          <a class="enlace-fantasma" href="catalogo.html">Ver todos <i class="bi bi-chevron-right"></i></a>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <article class="tarjeta-moto">
+              <div class="etiqueta-tarjeta">HIPERDEPORTIVA</div>
+              <img src="img/kawah2r.png" alt="Moto deportiva negra" class="imagen-moto imagen-contener" />
+              <div class="metricas-moto">
+                <span><i class="bi bi-speedometer2"></i> 400 km/h</span>
+                <span><i class="bi bi-lightning-charge"></i> 310 HP</span>
+                <span><i class="bi bi-droplet-half"></i> 216 kg</span>
+              </div>
+              <h3>Kawasaki Ninja H2R</h3>
+              <p class="precio-moto">$55,500 USD</p>
+            </article>
+          </div>
+
+          <div class="col-lg-4">
+            <article class="tarjeta-moto">
+              <div class="etiqueta-tarjeta">CROSS</div>
+              <img src="img/yamayz.png" alt="Moto cross azul" class="imagen-moto imagen-contener" />
+              <div class="metricas-moto">
+                <span><i class="bi bi-speedometer2"></i> 145 km/h</span>
+                <span><i class="bi bi-lightning-charge"></i> 38 HP</span>
+                <span><i class="bi bi-droplet-half"></i> 96 kg</span>
+              </div>
+              <h3>Yamaha YZ 125</h3>
+              <p class="precio-moto">$8,300 USD</p>
+            </article>
+          </div>
+
+          <div class="col-lg-4">
+            <article class="tarjeta-moto">
+              <div class="etiqueta-tarjeta">ADVENTURE</div>
+              <img src="img/ktmad.png" alt="Moto adventure" class="imagen-moto imagen-contener" />
+              <div class="metricas-moto">
+                <span><i class="bi bi-speedometer2"></i> 250 km/h</span>
+                <span><i class="bi bi-lightning-charge"></i> 173 HP</span>
+                <span><i class="bi bi-droplet-half"></i> 244 kg</span>
+              </div>
+              <h3>KTM Super Adventure R</h3>
+              <p class="precio-moto">$21,700 USD</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-contenido llamado-financiamiento text-center">
+      <div class="container-xl px-4">
+        <span class="etiqueta-seccion etiqueta-seccion-cian">Financiamiento disponible</span>
+        <h2>TU PRÓXIMA MOTO TE ESPERA</h2>
+        <p>Calcula tu plan de pagos personalizado y descubre la cuota ideal para rodar hoy mismo.</p>
+        <a class="boton-primario boton-grande" href="financiamiento.html">
+          Calcular financiamiento <i class="bi bi-chevron-right"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie-sitio">
+    <div class="container-xl px-4">
+      <div class="row g-4 pie-superior">
+        <div class="col-lg-3 col-md-6">
+          <a class="marca-texto mb-3 d-inline-flex" href="index.html">
+            <span class="marca-icono"><i class="bi bi-speedometer2"></i></span>
+            <span>RACING <span class="texto-acento">A&amp;A</span></span>
+          </a>
+          <p>Pasión, precisión y alto rendimiento en cada motocicleta de nuestra línea premium.</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h3 class="titulo-pie">Navegación</h3>
+          <ul class="enlaces-pie">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="financiamiento.html">Financiamiento</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="sucursales.html">Sucursales</a></li>
+
+            <!-- ACCESIBILIDAD: abre el panel inyectado -->
+            <li>
+              <a href="#" data-bs-toggle="offcanvas" data-bs-target="#panelAccesibilidad" aria-controls="panelAccesibilidad">
+                Accesibilidad
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h3 class="titulo-pie">Contacto</h3>
+          <ul class="contacto-pie">
+            <li><i class="bi bi-telephone"></i> +506 8888-8888</li>
+            <li><i class="bi bi-envelope"></i> inforacingaa@gmail.com</li>
+            <li><i class="bi bi-geo-alt"></i> San José, Costa Rica</li>
+            <li><i class="bi bi-geo-alt"></i> Puntarenas, Costa Rica</li>
+            <li><i class="bi bi-geo-alt"></i> Alajuela, Costa Rica</li>
+            <li><i class="bi bi-geo-alt"></i> Limón, Costa Rica</li>
+            <li><i class="bi bi-geo-alt"></i> Guanacaste, Costa Rica</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h3 class="titulo-pie">Horario</h3>
+          <ul class="enlaces-pie">
+            <li>Lunes - Viernes: 9:00am - 18:00pm</li>
+            <li>Sábado: 10:00am - 14:00pm</li>
+            <li>Domingo: Cerrado</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pie-inferior d-flex flex-column flex-md-row justify-content-between gap-2">
+        <p>&copy; 2025 RACINGA&amp;A. Todos los derechos reservados.</p>
+        <p>Hiperdeportivas · Adventure · Motocross</p>
+        <a href="#inicio" style="color: #ff004f;">Volver arriba</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ACCESIBILIDAD: cierre del contenido editable por accesibilidad -->
+  </div>
+
+  <!-- ACCESIBILIDAD: aquí se inyecta panelAccesibilidad.html -->
+  <div id="contenedorPanelAccesibilidad"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="js/accesibilidad.js"></script>
+
+</body>
+</html>

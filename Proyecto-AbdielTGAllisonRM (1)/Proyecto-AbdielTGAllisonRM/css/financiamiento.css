@@ -1,0 +1,137 @@
+.panel-financiamiento,
+.finance-panel,
+.tarjeta-resumen,
+.summary-card {
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.encabezado-financiamiento,
+.finance-headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.encabezado-financiamiento strong,
+.finance-headline strong,
+.caja-pago strong,
+.payment-box strong {
+  color: #00d7ff;
+  font-family: "Orbitron", sans-serif;
+}
+
+.selector-modelos,
+.model-selector {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.opcion-modelo,
+.model-option {
+  padding: 14px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: transparent;
+  color: white;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.opcion-modelo span,
+.model-option span {
+  display: block;
+  margin-top: 6px;
+  color: red;
+  font-size: 0.76rem;
+}
+
+.fila-opciones,
+.option-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.escala-rango,
+.range-scale {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 0.8rem;
+  color: #667086;
+}
+
+.caja-pago,
+.payment-box {
+  margin: 16px 0;
+  padding: 18px;
+  border: 1px solid rgba(0, 215, 255, 0.35);
+  background: rgba(0, 215, 255, 0.03);
+}
+
+.caja-pago span,
+.caja-pago small,
+.payment-box span,
+.payment-box small {
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+}
+
+.caja-pago strong,
+.payment-box strong {
+  display: block;
+  margin: 6px 0;
+  font-size: clamp(2.6rem, 5vw, 4.2rem);
+  line-height: 1;
+}
+
+.lista-resumen,
+.summary-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lista-resumen li,
+.summary-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  color: #8891a4;
+}
+
+.lista-resumen strong,
+.summary-list strong {
+  color: white;
+}
+
+.texto-destacado,
+.accent-text {
+  color: red !important;
+}
+
+.nota-financiamiento,
+.finance-note {
+  margin-top: 14px;
+  font-size: 0.84rem;
+}
+
+@media (max-width: 1199px) {
+  .selector-modelos,
+  .model-selector {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .selector-modelos,
+  .model-selector {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,171 @@
+
+.seccion-hero,
+.hero-section,
+.hero-historia,
+.story-hero {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 68vh;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-historia,
+.story-hero {
+  background:
+    linear-gradient(180deg, rgba(5, 6, 8, 0.95), rgba(5, 6, 8, 0.95)),
+    repeating-linear-gradient(-12deg, rgba(255, 255, 255, 0.03) 0, rgba(255, 255, 255, 0.03) 2px, transparent 2px, transparent 8px);
+}
+
+.capa-hero,
+.story-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.82)),
+    radial-gradient(circle at center, rgba(0, 215, 255, 0.08), transparent 25%),
+    repeating-linear-gradient(-12deg, rgba(255, 255, 255, 0.03) 0, rgba(255, 255, 255, 0.03) 2px, transparent 2px, transparent 8px);
+}
+
+.contenido-hero,
+.story-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.hero-centrado .contenido-hero,
+.story-hero-center .story-content,
+.hero-centrado .encabezado-seccion,
+.story-hero-center .section-header {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-centrado p,
+.hero-centrado .etiqueta-seccion,
+.hero-centrado h1,
+.story-hero-center p,
+.story-hero-center h1 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-centrado .etiqueta-seccion,
+.story-hero-center .section-kicker {
+  justify-content: center;
+}
+
+.etiqueta-seccion,
+.section-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: red;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+}
+
+.etiqueta-seccion::before,
+.etiqueta-seccion::after,
+.section-kicker::before,
+.section-kicker::after {
+  content: "";
+  width: 42px;
+  height: 1px;
+  background: currentColor;
+}
+
+.etiqueta-seccion-cian,
+.section-kicker-cyan {
+  color: #00d7ff;
+}
+
+.carousel-caption {
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.carousel-caption h5,
+.contenido-hero h1,
+.story-content h1,
+.encabezado-seccion h2,
+.section-header h2,
+.llamado-financiamiento h2,
+.cta-finance h2 {
+  margin: 16px 0;
+  font-size: clamp(2.7rem, 7vw, 5.8rem);
+  line-height: 0.96;
+  font-weight: 600;
+  color: white;
+}
+
+.carousel-caption p,
+.contenido-hero p,
+.story-content p,
+.encabezado-seccion p,
+.section-header p,
+.llamado-financiamiento p,
+.cta-finance p {
+  max-width: 640px;
+  font-size: clamp(1rem, 2vw, 1.1rem);
+}
+
+.carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(0.45);
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 30px;
+  height: 3px;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.carousel-indicators .active {
+  background: red;
+}
+
+@media (max-width: 991px) {
+  .carousel-caption h5,
+  .contenido-hero h1,
+  .story-content h1,
+  .encabezado-seccion h2,
+  .section-header h2,
+  .llamado-financiamiento h2,
+  .cta-finance h2 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-caption h5,
+  .contenido-hero h1,
+  .story-content h1,
+  .encabezado-seccion h2,
+  .section-header h2,
+  .llamado-financiamiento h2,
+  .cta-finance h2 {
+    font-size: 2.5rem;
+  }
+
+  .carousel-caption p,
+  .contenido-hero p,
+  .story-content p,
+  .encabezado-seccion p,
+  .section-header p,
+  .llamado-financiamiento p,
+  .cta-finance p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,98 @@
+#tabla-premium {
+  width: 100%;
+  margin: 40px auto 0;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 12px;
+  font-family: "Inter", sans-serif;
+}
+
+#tabla-caption {
+  margin-bottom: 15px;
+  caption-side: top;
+  color: #00d7ff;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+#col-1,
+#col-3 {
+  background-color: #020305;
+}
+
+#col-2,
+#col-4 {
+  background-color: #0b0d11;
+}
+
+#tabla-head {
+  background: red;
+  color: white;
+  font-family: "Orbitron", sans-serif;
+}
+
+#tabla-head th,
+#tabla-body td,
+#tabla-foot td {
+  padding: 12px 14px;
+}
+
+#tabla-head th {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#tabla-body td {
+  color: #667086;
+  transition: 0.3s ease;
+}
+
+#tabla-body tr:hover {
+  background: red;
+  transform: scale(1.01);
+}
+
+#tabla-body tr:hover td {
+  color: white;
+}
+
+#tabla-foot {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  text-align: center;
+}
+
+.contenedorPadre{
+    border: 2px solid crimson;
+}
+
+
+.flexPadre{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.alturaPadre{
+    height: auto;
+    padding: 40px 0;
+}
+
+
+.opc{
+    background-color: rgb(18, 20, 25);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+
+.opc:hover{
+    background-color: red;
+    color: white;
+    transform: translateY(-10px);
+}
