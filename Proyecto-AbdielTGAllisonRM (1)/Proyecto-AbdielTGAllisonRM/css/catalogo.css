@@ -23,12 +23,13 @@
 
 .acciones-tarjeta,
 .card-actions {
-  display: flex;
+  display: flex; 
   flex-wrap: wrap;
   gap: 10px;
   margin-top: auto;
 }
 
+/*Ajustar contenido*/
 .acciones-tarjeta > *,
 .card-actions > * {
   flex: 1 1 180px;

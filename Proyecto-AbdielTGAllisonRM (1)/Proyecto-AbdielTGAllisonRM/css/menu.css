@@ -16,8 +16,7 @@
   color: white !important;
 }
 
-.marca-icono,
-.brand-logo {
+.marca-icono{
   display: grid;
   place-items: center;
   width: 1.3rem;
@@ -25,8 +24,7 @@
   color: red;
 }
 
-.texto-acento,
-.accent-word {
+.texto-acento {
   color: red;
 }
 
