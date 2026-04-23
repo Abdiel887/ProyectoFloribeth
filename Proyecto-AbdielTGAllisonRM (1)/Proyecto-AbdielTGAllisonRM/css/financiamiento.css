@@ -1,13 +1,10 @@
 .panel-financiamiento,
-.finance-panel,
-.tarjeta-resumen,
-.summary-card {
+.tarjeta-resumen {
   padding: 24px;
   margin-bottom: 20px;
 }
 
-.encabezado-financiamiento,
-.finance-headline {
+.encabezado-financiamiento {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,22 +12,18 @@
 }
 
 .encabezado-financiamiento strong,
-.finance-headline strong,
-.caja-pago strong,
-.payment-box strong {
+.caja-pago strong {
   color: #00d7ff;
   font-family: "Orbitron", sans-serif;
 }
 
-.selector-modelos,
-.model-selector {
+.selector-modelos {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
 }
 
-.opcion-modelo,
-.model-option {
+.opcion-modelo {
   padding: 14px 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: transparent;
@@ -39,23 +32,20 @@
   font-size: 0.9rem;
 }
 
-.opcion-modelo span,
-.model-option span {
+.opcion-modelo span {
   display: block;
   margin-top: 6px;
   color: red;
   font-size: 0.76rem;
 }
 
-.fila-opciones,
-.option-row {
+.fila-opciones {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.escala-rango,
-.range-scale {
+.escala-rango {
   display: flex;
   justify-content: space-between;
   gap: 16px;
@@ -63,8 +53,7 @@
   color: #667086;
 }
 
-.caja-pago,
-.payment-box {
+.caja-pago {
   margin: 16px 0;
   padding: 18px;
   border: 1px solid rgba(0, 215, 255, 0.35);
@@ -72,32 +61,27 @@
 }
 
 .caja-pago span,
-.caja-pago small,
-.payment-box span,
-.payment-box small {
+.caja-pago small {
   display: block;
   text-transform: uppercase;
   font-size: 0.74rem;
   letter-spacing: 0.08em;
 }
 
-.caja-pago strong,
-.payment-box strong {
+.caja-pago strong {
   display: block;
   margin: 6px 0;
   font-size: clamp(2.6rem, 5vw, 4.2rem);
   line-height: 1;
 }
 
-.lista-resumen,
-.summary-list {
+.lista-resumen {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.lista-resumen li,
-.summary-list li {
+.lista-resumen li {
   display: flex;
   justify-content: space-between;
   gap: 16px;
@@ -106,32 +90,28 @@
   color: #8891a4;
 }
 
-.lista-resumen strong,
-.summary-list strong {
+.lista-resumen strong {
   color: white;
 }
 
-.texto-destacado,
-.accent-text {
+.texto-destacado {
   color: red !important;
 }
 
-.nota-financiamiento,
-.finance-note {
+.nota-financiamiento {
   margin-top: 14px;
   font-size: 0.84rem;
 }
 
 @media (max-width: 1199px) {
-  .selector-modelos,
-  .model-selector {
+  .selector-modelos {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 767px) {
-  .selector-modelos,
-  .model-selector {
+  .selector-modelos {
     grid-template-columns: 1fr;
   }
 }
+

@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
         !elemento.classList.contains("bi") &&
         !elemento.closest(".navbar-brand") &&
         !elemento.closest(".marca-texto") &&
-        !elemento.closest(".brand-wordmark") &&
         !elemento.closest(".marca-icono") &&
         !elemento.closest(".panel-accesibilidad")
       );

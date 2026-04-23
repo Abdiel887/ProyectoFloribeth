@@ -1,13 +1,11 @@
-.linea-tiempo,
-.timeline-wrap {
+.linea-tiempo {
   position: relative;
   max-width: 980px;
   margin: 0 auto;
   padding: 24px 0 8px;
 }
 
-.linea-tiempo::before,
-.timeline-wrap::before {
+.linea-tiempo::before {
   content: "";
   position: absolute;
   top: 0;
@@ -17,26 +15,22 @@
   background: rgba(255, 255, 255, 0.12);
 }
 
-.item-linea-tiempo,
-.timeline-item {
+.item-linea-tiempo {
   position: relative;
   width: 50%;
   padding: 0 42px 48px;
 }
 
-.linea-tiempo-izquierda,
-.timeline-left {
+.linea-tiempo-izquierda {
   left: 0;
   text-align: right;
 }
 
-.linea-tiempo-derecha,
-.timeline-right {
+.linea-tiempo-derecha {
   left: 50%;
 }
 
-.punto-linea-tiempo,
-.timeline-dot {
+.punto-linea-tiempo {
   position: absolute;
   top: 18px;
   left: calc(100% - 6px);
@@ -45,46 +39,39 @@
   background: red;
 }
 
-.linea-tiempo-derecha .punto-linea-tiempo,
-.timeline-right .timeline-dot {
+.linea-tiempo-derecha .punto-linea-tiempo {
   left: -6px;
 }
 
-.tarjeta-linea-tiempo,
-.timeline-card {
+.tarjeta-linea-tiempo {
   padding: 22px;
 }
 
-.tarjeta-linea-tiempo h3,
-.timeline-card h3 {
+.tarjeta-linea-tiempo h3 {
   margin: 0;
   color: #00d7ff;
   font-size: 2rem;
 }
 
-.franja-estadisticas,
-.stats-strip {
+.franja-estadisticas {
   padding: 45px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.caja-estadistica,
-.stat-box {
+.caja-estadistica {
   padding: 24px 16px;
   border: 1px solid rgba(255, 255, 255, 0.06);
   background: rgba(255, 255, 255, 0.02);
 }
 
-.caja-estadistica strong,
-.stat-box strong {
+.caja-estadistica strong {
   display: block;
   color: red;
   font-family: "Orbitron", sans-serif;
   font-size: clamp(2rem, 5vw, 3.4rem);
 }
 
-.caja-estadistica span,
-.stat-box span {
+.caja-estadistica span {
   color: #8891a4;
   text-transform: uppercase;
   font-size: 0.82rem;
@@ -92,17 +79,13 @@
 }
 
 @media (max-width: 991px) {
-  .linea-tiempo::before,
-  .timeline-wrap::before {
+  .linea-tiempo::before {
     left: 16px;
   }
 
   .item-linea-tiempo,
   .linea-tiempo-izquierda,
-  .linea-tiempo-derecha,
-  .timeline-item,
-  .timeline-left,
-  .timeline-right {
+  .linea-tiempo-derecha {
     width: 100%;
     left: 0;
     text-align: left;
@@ -111,12 +94,9 @@
   }
 
   .punto-linea-tiempo,
-  .linea-tiempo-derecha .punto-linea-tiempo,
-  .timeline-dot,
-  .timeline-right .timeline-dot {
+  .linea-tiempo-derecha .punto-linea-tiempo {
     left: 10px;
   }
-}
 
 .estiloBody{
     width: 90%;
@@ -124,4 +104,4 @@
     margin-right: auto;
     margin-top: 16px;
 }
-
+}

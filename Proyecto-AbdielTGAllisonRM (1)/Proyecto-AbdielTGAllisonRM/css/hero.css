@@ -1,8 +1,5 @@
-
 .seccion-hero,
-.hero-section,
-.hero-historia,
-.story-hero {
+.hero-historia {
   position: relative;
   display: grid;
   place-items: center;
@@ -13,15 +10,13 @@
   background-position: center;
 }
 
-.hero-historia,
-.story-hero {
+.hero-historia {
   background:
     linear-gradient(180deg, rgba(5, 6, 8, 0.95), rgba(5, 6, 8, 0.95)),
     repeating-linear-gradient(-12deg, rgba(255, 255, 255, 0.03) 0, rgba(255, 255, 255, 0.03) 2px, transparent 2px, transparent 8px);
 }
 
-.capa-hero,
-.story-overlay {
+.capa-hero {
   position: absolute;
   inset: 0;
   background:
@@ -30,17 +25,14 @@
     repeating-linear-gradient(-12deg, rgba(255, 255, 255, 0.03) 0, rgba(255, 255, 255, 0.03) 2px, transparent 2px, transparent 8px);
 }
 
-.contenido-hero,
-.story-content {
+.contenido-hero {
   position: relative;
   z-index: 1;
   width: 100%;
 }
 
 .hero-centrado .contenido-hero,
-.story-hero-center .story-content,
-.hero-centrado .encabezado-seccion,
-.story-hero-center .section-header {
+.hero-centrado .encabezado-seccion {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -48,20 +40,16 @@
 
 .hero-centrado p,
 .hero-centrado .etiqueta-seccion,
-.hero-centrado h1,
-.story-hero-center p,
-.story-hero-center h1 {
+.hero-centrado h1 {
   margin-left: auto;
   margin-right: auto;
 }
 
-.hero-centrado .etiqueta-seccion,
-.story-hero-center .section-kicker {
+.hero-centrado .etiqueta-seccion {
   justify-content: center;
 }
 
-.etiqueta-seccion,
-.section-kicker {
+.etiqueta-seccion {
   display: inline-flex;
   align-items: center;
   gap: 14px;
@@ -73,17 +61,14 @@
 }
 
 .etiqueta-seccion::before,
-.etiqueta-seccion::after,
-.section-kicker::before,
-.section-kicker::after {
+.etiqueta-seccion::after {
   content: "";
   width: 42px;
   height: 1px;
   background: currentColor;
 }
 
-.etiqueta-seccion-cian,
-.section-kicker-cyan {
+.etiqueta-seccion-cian {
   color: #00d7ff;
 }
 
@@ -96,11 +81,8 @@
 
 .carousel-caption h5,
 .contenido-hero h1,
-.story-content h1,
 .encabezado-seccion h2,
-.section-header h2,
-.llamado-financiamiento h2,
-.cta-finance h2 {
+.llamado-financiamiento h2 {
   margin: 16px 0;
   font-size: clamp(2.7rem, 7vw, 5.8rem);
   line-height: 0.96;
@@ -110,11 +92,8 @@
 
 .carousel-caption p,
 .contenido-hero p,
-.story-content p,
 .encabezado-seccion p,
-.section-header p,
-.llamado-financiamiento p,
-.cta-finance p {
+.llamado-financiamiento p {
   max-width: 640px;
   font-size: clamp(1rem, 2vw, 1.1rem);
 }
@@ -139,33 +118,25 @@
 @media (max-width: 991px) {
   .carousel-caption h5,
   .contenido-hero h1,
-  .story-content h1,
   .encabezado-seccion h2,
-  .section-header h2,
-  .llamado-financiamiento h2,
-  .cta-finance h2 {
+  .llamado-financiamiento h2 {
     font-size: 3.5rem;
   }
-}
 
 @media (max-width: 767px) {
   .carousel-caption h5,
   .contenido-hero h1,
-  .story-content h1,
   .encabezado-seccion h2,
-  .section-header h2,
-  .llamado-financiamiento h2,
-  .cta-finance h2 {
+  .llamado-financiamiento h2 {
     font-size: 2.5rem;
   }
 
   .carousel-caption p,
   .contenido-hero p,
-  .story-content p,
   .encabezado-seccion p,
-  .section-header p,
-  .llamado-financiamiento p,
-  .cta-finance p {
+  .llamado-financiamiento p {
     font-size: 1rem;
   }
 }
+}
+

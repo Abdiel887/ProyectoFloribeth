@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  let botonesFiltro = document.querySelectorAll(".filtro-catalogo, .catalog-filter");
-  let itemsCatalogo = document.querySelectorAll(".item-catalogo, .catalog-item");
+  let botonesFiltro = document.querySelectorAll(".filtro-catalogo");
+  let itemsCatalogo = document.querySelectorAll(".item-catalogo");
   let modalMoto = document.getElementById("modalMoto") || document.getElementById("bikeModal");
 
   function aplicarFiltro(filtro) {
@@ -15,10 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
     itemsCatalogo.forEach(function (item) {
       if (filtro === "all" || item.dataset.category === filtro) {
         item.classList.remove("oculto");
-        item.classList.remove("hidden");
       } else {
         item.classList.add("oculto");
-        item.classList.add("hidden");
       }
     });
   }

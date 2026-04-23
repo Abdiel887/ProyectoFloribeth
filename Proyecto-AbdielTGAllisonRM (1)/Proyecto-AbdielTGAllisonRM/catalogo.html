@@ -19,9 +19,9 @@
 
   <body>
     <div id="contenidoAccesible">
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top site-navbar">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top barra-sitio">
         <div class="container-xl px-4">
-          <a class="navbar-brand brand-wordmark" href="index.html">
+          <a class="navbar-brand marca-texto" href="index.html">
             <span class="marca-icono"><i class="bi bi-speedometer2"></i></span>
             <span>RACING<span class="texto-acento">A&amp;A</span></span>
           </a>
@@ -71,16 +71,16 @@
         </div>
       </nav>
 
-      <main class="page-main">
+      <main class="pagina-principal">
         <section
           id="inicio"
-          class="hero-section story-hero-center"
+          class="seccion-hero hero-centrado"
           style="background-image: url('img/catalogo.jpg')"
         >
-          <div class="story-overlay"></div>
+          <div class="capa-hero"></div>
 
-          <div class="container-xl px-4 story-content">
-            <span class="section-kicker">CATÁLOGO COMPLETO</span>
+          <div class="container-xl px-4 contenido-hero">
+            <span class="etiqueta-seccion">CATÁLOGO COMPLETO</span>
             <h1>EL SHOWROOM</h1>
             <p>
               Explora nuestra gama de motocicletas de alto rendimiento. Filtra por
@@ -89,24 +89,24 @@
           </div>
         </section>
 
-        <section class="content-section pt-0">
+        <section class="seccion-contenido pt-0">
           <div class="container-xl px-4">
-            <div class="filter-row">
-              <button class="catalog-filter active" data-filter="all">Todas</button>
-              <button class="catalog-filter" data-filter="deportivas">Deportivas</button>
-              <button class="catalog-filter" data-filter="cross">Cross</button>
-              <button class="catalog-filter" data-filter="adventure">Adventure</button>
+            <div class="fila-filtros">
+              <button class="filtro-catalogo active" data-filter="all">Todas</button>
+              <button class="filtro-catalogo" data-filter="deportivas">Deportivas</button>
+              <button class="filtro-catalogo" data-filter="cross">Cross</button>
+              <button class="filtro-catalogo" data-filter="adventure">Adventure</button>
             </div>
 
-            <!-- Deportivas -->
+          
             <div class="row g-4" id="catalogGrid">
-              <div class="col-md-6 col-xl-4 catalog-item" data-category="deportivas">
+              <div class="col-md-6 col-xl-4 item-catalogo" data-category="deportivas">
                 <article>
-                  <img src="img/kawah2r.png" alt="Kawasaki ninja" class="card-bike-image contain-image" />
+                  <img src="img/kawah2r.png" alt="Kawasaki ninja" class="imagen-moto imagen-contener" />
                   <h3>Kawasaki Ninja H2R</h3>
-                  <p class="bike-price">$55,500 USD</p>
-                  <div class="card-actions">
-                    <button class="outline-btn bike-modal-trigger"
+                  <p class="precio-moto">$55,500 USD</p>
+                  <div class="acciones-tarjeta">
+                    <button class="boton-secundario bike-modal-trigger"
                       data-bs-toggle="modal"
                       data-bs-target="#bikeModal"
                       data-bike='{
@@ -131,13 +131,13 @@
                 </article>
               </div>
 
-              <div class="col-md-6 col-xl-4 catalog-item" data-category="deportivas">
+              <div class="col-md-6 col-xl-4 item-catalogo" data-category="deportivas">
                 <article>
-                  <img src="img/yamaha r9.png" alt="Yamaha R9" class="card-bike-image contain-image" />
+                  <img src="img/yamaha r9.png" alt="Yamaha R9" class="imagen-moto imagen-contener" />
                   <h3>Yamaha R9</h3>
-                  <p class="bike-price">$12,500 USD</p>
-                  <div class="card-actions">
-                    <button class="outline-btn bike-modal-trigger"
+                  <p class="precio-moto">$12,500 USD</p>
+                  <div class="acciones-tarjeta">
+                    <button class="boton-secundario bike-modal-trigger"
                       data-bs-toggle="modal"
                       data-bs-target="#bikeModal"
                       data-bike='{
@@ -162,13 +162,13 @@
                 </article>
               </div>
 
-              <div class="col-md-6 col-xl-4 catalog-item" data-category="deportivas">
+              <div class="col-md-6 col-xl-4 item-catalogo" data-category="deportivas">
                 <article>
-                  <img src="img/Honda-CBR650R.png" alt="Honda CBR650" class="card-bike-image contain-image" />
+                  <img src="img/Honda-CBR650R.png" alt="Honda CBR650" class="imagen-moto imagen-contener" />
                   <h3>Honda CBR 650 R</h3>
-                  <p class="bike-price">$10,500 USD</p>
-                  <div class="card-actions">
-                    <button class="outline-btn bike-modal-trigger"
+                  <p class="precio-moto">$10,500 USD</p>
+                  <div class="acciones-tarjeta">
+                    <button class="boton-secundario bike-modal-trigger"
                       data-bs-toggle="modal"
                       data-bs-target="#bikeModal"
                       data-bike='{
@@ -193,13 +193,13 @@
                 </article>
               </div>
 
-              <div class="col-md-6 col-xl-4 catalog-item" data-category="deportivas">
+              <div class="col-md-6 col-xl-4 item-catalogo" data-category="deportivas">
                 <article>
-                  <img src="img/GSX1300R-Hayabusa.png" alt="Hayabusa" class="card-bike-image contain-image" />
+                  <img src="img/GSX1300R-Hayabusa.png" alt="Hayabusa" class="imagen-moto imagen-contener" />
                   <h3>Suzuki Hayabusa GSX1300R</h3>
-                  <p class="bike-price">$18,500 USD</p>
-                  <div class="card-actions">
-                    <button class="outline-btn bike-modal-trigger"
+                  <p class="precio-moto">$18,500 USD</p>
+                  <div class="acciones-tarjeta">
+                    <button class="boton-secundario bike-modal-trigger"
                       data-bs-toggle="modal"
                       data-bs-target="#bikeModal"
                       data-bike='{
@@ -224,14 +224,14 @@
                 </article>
               </div>
 
-              <!-- Motocross -->
-              <div class="col-md-6 col-xl-4 catalog-item" data-category="cross">
+              
+              <div class="col-md-6 col-xl-4 item-catalogo" data-category="cross">
                 <article>
-                  <img src="img/yamayz.png" alt="Yamaha yz" class="card-bike-image contain-image" />
+                  <img src="img/yamayz.png" alt="Yamaha yz" class="imagen-moto imagen-contener" />
                   <h3>Yamaha YZ 125</h3>
-                  <p class="bike-price">$8,300 USD</p>
-                  <div class="card-actions">
-                    <button class="outline-btn bike-modal-trigger"
+                  <p class="precio-moto">$8,300 USD</p>
+                  <div class="acciones-tarjeta">
+                    <button class="boton-secundario bike-modal-trigger"
                       data-bs-toggle="modal"
                       data-bs-target="#bikeModal"
                       data-bike='{
@@ -256,13 +256,13 @@
                 </article>
               </div>
 
-              <div class="col-md-6 col-xl-4 catalog-item" data-category="cross">
+              <div class="col-md-6 col-xl-4 item-catalogo" data-category="cross">
                 <article>
-                  <img src="img/BETA-RR-RACING-300.png" alt="Beta RR 300" class="card-bike-image contain-image" />
+                  <img src="img/BETA-RR-RACING-300.png" alt="Beta RR 300" class="imagen-moto imagen-contener" />
                   <h3>Beta RR Racing 300</h3>
-                  <p class="bike-price">$10,200 USD</p>
-                  <div class="card-actions">
-                    <button class="outline-btn bike-modal-trigger"
+                  <p class="precio-moto">$10,200 USD</p>
+                  <div class="acciones-tarjeta">
+                    <button class="boton-secundario bike-modal-trigger"
                       data-bs-toggle="modal"
                       data-bs-target="#bikeModal"
                       data-bike='{
@@ -287,13 +287,13 @@
                 </article>
               </div>
 
-              <div class="col-md-6 col-xl-4 catalog-item" data-category="cross">
+              <div class="col-md-6 col-xl-4 item-catalogo" data-category="cross">
                 <article>
-                  <img src="img/honda_0018_CRF450R.png" alt="Honda CRF 450R" class="card-bike-image contain-image" />
+                  <img src="img/honda_0018_CRF450R.png" alt="Honda CRF 450R" class="imagen-moto imagen-contener" />
                   <h3>Honda CRF 450R</h3>
-                  <p class="bike-price">$9,800 USD</p>
-                  <div class="card-actions">
-                    <button class="outline-btn bike-modal-trigger"
+                  <p class="precio-moto">$9,800 USD</p>
+                  <div class="acciones-tarjeta">
+                    <button class="boton-secundario bike-modal-trigger"
                       data-bs-toggle="modal"
                       data-bs-target="#bikeModal"
                       data-bike='{
@@ -318,13 +318,13 @@
                 </article>
               </div>
 
-              <div class="col-md-6 col-xl-4 catalog-item" data-category="cross">
+              <div class="col-md-6 col-xl-4 item-catalogo" data-category="cross">
                 <article>
-                  <img src="img/KTM-450-XC-F.png" alt="KTM 450 XC-F" class="card-bike-image contain-image" />
+                  <img src="img/KTM-450-XC-F.png" alt="KTM 450 XC-F" class="imagen-moto imagen-contener" />
                   <h3>KTM 450 XC-F</h3>
-                  <p class="bike-price">$11,000 USD</p>
-                  <div class="card-actions">
-                    <button class="outline-btn bike-modal-trigger"
+                  <p class="precio-moto">$11,000 USD</p>
+                  <div class="acciones-tarjeta">
+                    <button class="boton-secundario bike-modal-trigger"
                       data-bs-toggle="modal"
                       data-bs-target="#bikeModal"
                       data-bike='{
@@ -349,14 +349,14 @@
                 </article>
               </div>
 
-              <!-- Adventure -->
-              <div class="col-md-6 col-xl-4 catalog-item" data-category="adventure">
+             
+              <div class="col-md-6 col-xl-4 item-catalogo" data-category="adventure">
                 <article>
-                  <img src="img/ktmad.png" alt="KTM adventure" class="card-bike-image contain-image" />
+                  <img src="img/ktmad.png" alt="KTM adventure" class="imagen-moto imagen-contener" />
                   <h3>KTM Super Adventure R</h3>
-                  <p class="bike-price">$21,700 USD</p>
-                  <div class="card-actions">
-                    <button class="outline-btn bike-modal-trigger"
+                  <p class="precio-moto">$21,700 USD</p>
+                  <div class="acciones-tarjeta">
+                    <button class="boton-secundario bike-modal-trigger"
                       data-bs-toggle="modal"
                       data-bs-target="#bikeModal"
                       data-bike='{
@@ -381,13 +381,13 @@
                 </article>
               </div>
 
-              <div class="col-md-6 col-xl-4 catalog-item" data-category="adventure">
+              <div class="col-md-6 col-xl-4 item-catalogo" data-category="adventure">
                 <article>
-                  <img src="img/freedom.png" alt="Freedom RX401" class="card-bike-image contain-image" />
+                  <img src="img/freedom.png" alt="Freedom RX401" class="imagen-moto imagen-contener" />
                   <h3>Freedom RX401</h3>
-                  <p class="bike-price">$6,500 USD</p>
-                  <div class="card-actions">
-                    <button class="outline-btn bike-modal-trigger"
+                  <p class="precio-moto">$6,500 USD</p>
+                  <div class="acciones-tarjeta">
+                    <button class="boton-secundario bike-modal-trigger"
                       data-bs-toggle="modal"
                       data-bs-target="#bikeModal"
                       data-bike='{
@@ -412,13 +412,13 @@
                 </article>
               </div>
 
-              <div class="col-md-6 col-xl-4 catalog-item" data-category="adventure">
+              <div class="col-md-6 col-xl-4 item-catalogo" data-category="adventure">
                 <article>
-                  <img src="img/2017_bmw-r-1200-gs_6.png" alt="BMW R 1200 GS" class="card-bike-image contain-image" />
+                  <img src="img/2017_bmw-r-1200-gs_6.png" alt="BMW R 1200 GS" class="imagen-moto imagen-contener" />
                   <h3>BMW R 1200 GS</h3>
-                  <p class="bike-price">$20,000 USD</p>
-                  <div class="card-actions">
-                    <button class="outline-btn bike-modal-trigger"
+                  <p class="precio-moto">$20,000 USD</p>
+                  <div class="acciones-tarjeta">
+                    <button class="boton-secundario bike-modal-trigger"
                       data-bs-toggle="modal"
                       data-bs-target="#bikeModal"
                       data-bike='{
@@ -443,13 +443,13 @@
                 </article>
               </div>
 
-              <div class="col-md-6 col-xl-4 catalog-item" data-category="adventure">
+              <div class="col-md-6 col-xl-4 item-catalogo" data-category="adventure">
                 <article>
-                  <img src="img/ktm890.png" alt="KTM 890 Adventure R" class="card-bike-image contain-image" />
+                  <img src="img/ktm890.png" alt="KTM 890 Adventure R" class="imagen-moto imagen-contener" />
                   <h3>KTM 890 Adventure R</h3>
-                  <p class="bike-price">$15,000 USD</p>
-                  <div class="card-actions">
-                    <button class="outline-btn bike-modal-trigger"
+                  <p class="precio-moto">$15,000 USD</p>
+                  <div class="acciones-tarjeta">
+                    <button class="boton-secundario bike-modal-trigger"
                       data-bs-toggle="modal"
                       data-bs-target="#bikeModal"
                       data-bike='{
@@ -480,7 +480,7 @@
 
       <div class="modal fade" id="bikeModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
-          <div class="modal-content custom-modal">
+          <div class="modal-content modal-personalizado">
             <div class="modal-header border-0">
               <h3 class="modal-title" id="bikeModalTitle"></h3>
               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
@@ -497,57 +497,57 @@
                   </div>
 
                   <div class="col-lg-4">
-                    <h2 class="bike-price mb-3" id="bikeModalPrice"></h2>
+                    <h2 class="precio-moto mb-3" id="bikeModalPrice"></h2>
 
-                    <p class="detail-line">
+                    <p class="linea-detalle">
                       Categoría: <strong id="bikeModalCategory"></strong>
                     </p>
 
-                    <p class="detail-line">
+                    <p class="linea-detalle">
                       Marca: <strong id="bikeModalMarca"></strong>
                     </p>
 
-                    <p id="bikeModalDescription" class="modal-description"></p>
+                    <p id="bikeModalDescription" class="descripcion-modal"></p>
 
-                    <h4 class="panel-title mt-4">Especificaciones</h4>
+                    <h4 class="titulo-panel mt-4">Especificaciones</h4>
 
-                    <p class="detail-line">
+                    <p class="linea-detalle">
                       Arranque: <strong id="bikeModalArranque"></strong>
                     </p>
 
-                    <p class="detail-line">
+                    <p class="linea-detalle">
                       Transmisión: <strong id="bikeModalTransmision"></strong>
                     </p>
 
-                    <p class="detail-line">
+                    <p class="linea-detalle">
                       Llantas: <strong id="bikeModalLlantas"></strong>
                     </p>
 
-                    <p class="detail-line">
+                    <p class="linea-detalle">
                       Suspensión: <strong id="bikeModalSuspension"></strong>
                     </p>
 
-                    <p class="detail-line">
+                    <p class="linea-detalle">
                       Frenos: <strong id="bikeModalFrenos"></strong>
                     </p>
 
-                    <p class="detail-line">
+                    <p class="linea-detalle">
                       Caballaje: <strong id="bikeModalHP"></strong>
                     </p>
 
-                    <p class="detail-line">
+                    <p class="linea-detalle">
                       Torque: <strong id="bikeModalNw"></strong>
                     </p>
 
-                    <p class="detail-line">
+                    <p class="linea-detalle">
                       Peso: <strong id="bikeModalKg"></strong>
                     </p>
 
-                    <p class="detail-line">
+                    <p class="linea-detalle">
                       Cilindrada: <strong id="bikeModalCilindrada"></strong>
                     </p>
 
-                    <p class="detail-line">
+                    <p class="linea-detalle">
                       Número de cilindros: <strong id="bikeModalCilindros"></strong>
                     </p>
                   </div>
@@ -558,11 +558,11 @@
         </div>
       </div>
 
-      <footer class="site-footer">
+      <footer class="pie-sitio">
         <div class="container-xl px-4">
-          <div class="row g-4 footer-top">
+          <div class="row g-4 pie-superior">
             <div class="col-lg-3 col-md-6">
-              <a class="brand-wordmark mb-3 d-inline-flex" href="index.html">
+              <a class="marca-texto mb-3 d-inline-flex" href="index.html">
                 <span class="marca-icono"><i class="bi bi-speedometer2"></i></span>
                 <span>RACING<span class="texto-acento">A&amp;A</span></span>
               </a>
@@ -573,8 +573,8 @@
             </div>
 
             <div class="col-lg-3 col-md-6">
-              <h3 class="footer-title">Navegación</h3>
-              <ul class="footer-links">
+              <h3 class="titulo-pie">Navegación</h3>
+              <ul class="enlaces-pie">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="catalogo.html">Catálogo</a></li>
                 <li><a href="financiamiento.html">Financiamiento</a></li>
@@ -595,8 +595,8 @@
             </div>
 
             <div class="col-lg-3 col-md-6">
-              <h3 class="footer-title">Contacto</h3>
-              <ul class="footer-contact">
+              <h3 class="titulo-pie">Contacto</h3>
+              <ul class="contacto-pie">
                 <li><i class="bi bi-telephone"></i>+506 8888-8888</li>
                 <li><i class="bi bi-envelope"></i>inforacingaa@gmail.com</li>
                 <li><i class="bi bi-geo-alt"></i>San José, Costa Rica</li>
@@ -608,8 +608,8 @@
             </div>
 
             <div class="col-lg-3 col-md-6">
-              <h3 class="footer-title">Horario</h3>
-              <ul class="footer-links">
+              <h3 class="titulo-pie">Horario</h3>
+              <ul class="enlaces-pie">
                 <li>Lunes - Viernes: 9:00am - 18:00pm</li>
                 <li>Sábado: 10:00am - 14:00pm</li>
                 <li>Domingo: Cerrado</li>
@@ -617,7 +617,7 @@
             </div>
           </div>
 
-          <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
+          <div class="pie-inferior d-flex flex-column flex-md-row justify-content-between gap-2">
             <p>© 2025 RACINGA&amp;A. Todos los derechos reservados.</p>
             <p>Hiperdeportivas · Adventure · Motocross</p>
             <a href="#inicio" style="color: red;">Volver arriba</a>

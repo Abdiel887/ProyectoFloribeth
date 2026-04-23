@@ -1,13 +1,11 @@
-.barra-sitio,
-.site-navbar {
+.barra-sitio {
   min-height: 78px;
   background: rgba(3, 4, 7, 0.88);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.marca-texto,
-.brand-wordmark {
+.marca-texto {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -42,8 +40,7 @@
 }
 
 @media (max-width: 991px) {
-  .barra-sitio .navbar-collapse,
-  .site-navbar .navbar-collapse {
+  .barra-sitio .navbar-collapse {
     margin-top: 1rem;
     padding: 1.5rem;
     border: 1px solid rgba(255, 255, 255, 0.06);
@@ -76,13 +73,11 @@
 }
 
 @media (max-width: 767px) {
-  .barra-sitio,
-  .site-navbar {
+  .barra-sitio {
     padding: 8px 0;
   }
 
-  .barra-sitio .navbar-collapse,
-  .site-navbar .navbar-collapse {
+  .barra-sitio .navbar-collapse {
     padding: 1rem;
   }
 }
